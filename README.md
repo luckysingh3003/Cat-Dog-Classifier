@@ -1,8 +1,7 @@
 # 🐶🐱 Cat vs Dog Image Classifier
 
 This project is a deep learning application that identifies whether an uploaded image contains a **cat** or a **dog**.
-The model is built using **EfficientNetB0** with transfer learning and is deployed as an interactive web application.
-
+ 
 Users can upload an image through the web interface, and the system predicts the animal type along with a confidence score.
 
 ---
@@ -88,17 +87,17 @@ Dog 🐶 | Confidence: 0.94
 This project was built using the following tools:
 
 * Python
-* 
+  
 * TensorFlow / Keras
-* 
+  
 * EfficientNetB0
-* 
+  
 * NumPy
-* 
+  
 * Pillow
-* 
+  
 * Gradio
-* 
+  
 * Hugging Face Spaces
 
 ---
@@ -108,8 +107,11 @@ This project was built using the following tools:
 Cat-Dog-Classifier
 │
 ├── app.py
+
 ├── cat_dog.weights.h5
+
 ├── requirements.txt
+
 └── README.md
 
 ---
@@ -139,8 +141,11 @@ python app.py
 This project can be useful for:
 
 * Learning computer vision concepts
+* 
 * Demonstrating transfer learning
+* 
 * Building simple image classification systems
+* 
 * Educational AI projects
 
 ---
