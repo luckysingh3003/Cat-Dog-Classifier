@@ -26,10 +26,15 @@ The pretrained EfficientNet model was used as a feature extractor and additional
 Model pipeline:
 
 EfficientNetB0 (pretrained on ImageNet)
+
 → Global Average Pooling
+
 → Batch Normalization
+
 → Dense Layer (256 neurons, ReLU)
+
 → Dropout (0.5)
+
 → Output Layer (Sigmoid)
 
 ---
@@ -39,12 +44,15 @@ EfficientNetB0 (pretrained on ImageNet)
 After training and validation, the model achieved strong performance:
 
 Training Accuracy: ~98–99%
+
 Validation Accuracy: ~99%
+
 Validation Loss: ~0.03
 
 Dataset distribution:
 
 Training images: ~23,000
+
 Validation images: ~2,000
 
 ---
@@ -56,7 +64,9 @@ Validation images: ~2,000
 The model expects an image with the following properties:
 
 * Size: 224 × 224 pixels
+* 
 * Color format: RGB
+* 
 * Pixel values scaled between 0 and 1
 
 ### Output
@@ -64,6 +74,7 @@ The model expects an image with the following properties:
 The model returns a probability indicating the predicted class:
 
 0 → Cat
+
 1 → Dog
 
 Example result:
@@ -77,11 +88,17 @@ Dog 🐶 | Confidence: 0.94
 This project was built using the following tools:
 
 * Python
+* 
 * TensorFlow / Keras
+* 
 * EfficientNetB0
+* 
 * NumPy
+* 
 * Pillow
+* 
 * Gradio
+* 
 * Hugging Face Spaces
 
 ---
